@@ -1,1 +1,107 @@
-// Specific CSS for your home-page
+a {
+   text-decoration: none !important;
+   color: black;
+}
+a:hover{
+   text-decoration: none !important;
+   color: black;
+}
+.banner {
+  color: white;
+  text-align: center;
+  //font-family: 'Open Sans', sans-serif !important;
+  height: 100vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  background-attachment: fixed;
+}
+
+.banner h1{
+  font-size: 44px;
+}
+
+.banner img{
+  height: 150px;
+}
+
+.small img{
+  height: 300px;
+}
+
+.punto img{
+  height: 75px;
+}// Specific CSS for your home-page
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  }
+
+  .footer2{
+  background-color: black;
+}
+.footer2 img{
+  height: 60px;
+}
+.social a:hover{
+  color: #1f9f2a;
+  font-size: 80px;
+  text-decoration: none;
+}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+   max-width: 400px;
+}
+
+.contact-img img {
+width: 100%;
+  height: auto;
+   max-width: 200px;
+}

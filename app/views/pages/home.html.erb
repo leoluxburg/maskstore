@@ -1,2 +1,69 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.7) 50%), url('<%= image_path 'https://images.pexels.com/photos/3881247/pexels-photo-3881247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'%>');  background-position: center;">
+  <div>
+    <div class="hidden-xs hidden-sm">
+    <%= image_tag("logo.png")%>
+    </div>
+    <h1>Elementos esenciales para usted y su familia.</h1>
+    <hr style="background-color: white;">
+    <p>Delivery de arcticulos esenciales para la proteccion <br> de la salud en Panamá</p>
+    <br>
+    <i class="fa fa-angle-double-down symbols" aria-hidden="true"></i>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <hr>
+  <br>
+  <h2 class="text-center">Productos</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <%= link_to mask_path, class: "" do %>
+      <div class="card-trip">
+        <img src="https://cdn.shopify.com/s/files/1/0354/8800/6280/products/TheLeoLab-Lepono-Medical-Surgical-Mask-Disposable_2048x.jpg?v=1584463524" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Mascarillas</h2>
+            <p>Caja 50 mascarillas desechables de tres capas.</p>
+            <h6>$22.00</h6>
+          </div>
+          <h2 class="card-trip-pricing btn btn-primary"><i class="fas fa-shopping-cart"></i></h2>
+        </div>
+      </div>
+      <% end %>
+    </div>
+     <div class="col-md-4">
+      <div class="card-trip">
+        <img src="https://maliks.bloooom.com/AlbumResources/1/Images/XLarge/1111100395213_2020-04-15-13-47-22.jpeg" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Careta</h2>
+            <p>Protector plastico de aislamiento para el rostro.</p>
+            <h6>$7.00</h6>
+          </div>
+          <p class="" style="color: red;">Out of stock</p>
+        </div>
+      </div>
+    </div>
+     <div class="col-md-4">
+      <div class="card-trip">
+        <img src="https://www.superbuys.com.au/assets/full/6971459119015.jpg?20200511144124" />
+        <div class="card-trip-infos">
+          <div>
+            <h2>Toallitas Humedas</h2>
+            <p>Paquete de 40 paños de liempieza personal.</p>
+            <h6>$5.00</h6>
+          </div>
+          <p class="" style="color: red;">Out of stock</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+</div>
+<br>
+<br>
+<br>
+

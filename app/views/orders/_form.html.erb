@@ -1,0 +1,23 @@
+
+<%= simple_form_for(@order) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :quanitity %>
+    <%= f.input :name %>
+    <%= f.input :phone %>
+    <%= f.input :email %>
+    <%= f.input :address %>
+    <br>
+    <p>Payment type*</p>
+    <%= f.select :payment_method , [ 'Tranferencia', 'Efectivo' ], :prompt => '-- --'%>
+    <br>
+    <br>
+    <%= f.input :code %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

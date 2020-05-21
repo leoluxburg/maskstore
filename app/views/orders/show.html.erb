@@ -1,0 +1,53 @@
+<div class="container" style="padding-top: 50px;">
+  <hr>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h1>Orden # <%= @order.id%> </h1>
+      <p id="notice"><%= notice %></p>
+      <p> <i class="fas fa-exclamation-triangle"></i> El departamento de ventas se pondra en contacto con usted <br>para confirmar y coordinar la entrenga de su pedido.</p>
+      <p>
+        <strong>Producto:</strong>
+        <a href="/mask"> Mascarillas Desechables </a>
+      </p>
+      <p>
+        <strong>Cantidad:</strong>
+        <%= @order.quanitity %>
+      </p>
+      <p>
+        <strong>Total:</strong>
+        <%= @order.quanitity * 22.00 %>0$
+      </p>
+      <p>
+        <strong>Name:</strong>
+        <%= @order.name %>
+      </p>
+
+      <p>
+        <strong>Phone:</strong>
+        <%= @order.phone %>
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <%= @order.email %>
+      </p>
+      <p>
+        <strong>Dirrección de entrega:</strong>
+        <%= @order.address %>
+      </p>
+      <p>
+        <strong>Método de pago:</strong>
+        <%= @order.payment_method %>
+      </p>
+      <p>
+        <strong>Code:</strong>
+        <%= @order.code %>
+      </p>
+
+      <%= link_to 'Back', root_path %>
+    </div>
+  </div>
+  <hr>
+</div>
+<br>
+<br>
